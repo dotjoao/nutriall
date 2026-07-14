@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marina Duarte — Nutrição Esportiva de Alta Performance</title>
+  <meta name="description" content="Nutrição esportiva individualizada, baseada em ciência, para atletas e pessoas que levam performance a sério. São Paulo e online." />
+  <meta property="og:title" content="Marina Duarte — Nutrição Esportiva de Alta Performance" />
+  <meta property="og:description" content="A ciência que separa o esforço do resultado." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>◆</text></svg>" />
+</head>
+<body>
+
+  <!-- Textura de ruído global -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a class="nav__brand" href="#top" aria-label="Marina Duarte — início">
+        <span class="nav__mark" aria-hidden="true"></span>
+        <span class="nav__name">Marina&nbsp;Duarte</span>
+        <span class="nav__crn">CRN-3&nbsp;48.217</span>
+      </a>
+      <nav class="nav__links" aria-label="Navegação principal">
+        <a href="#metodo">Método</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#planos">Acompanhamento</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a href="#contato" class="btn btn--ghost nav__cta">Agendar avaliação</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav aria-label="Menu">
+      <a href="#metodo" style="--i:0">Método</a>
+      <a href="#sobre" style="--i:1">Sobre</a>
+      <a href="#resultados" style="--i:2">Resultados</a>
+      <a href="#planos" style="--i:3">Acompanhamento</a>
+      <a href="#faq" style="--i:4">FAQ</a>
+      <a href="#contato" class="mobile-menu__cta" style="--i:5">Agendar avaliação</a>
+    </nav>
+  </div>
+
+  <main id="top">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__ambient" aria-hidden="true">
+        <span class="orb orb--a" data-parallax="0.12"></span>
+        <span class="orb orb--b" data-parallax="-0.08"></span>
+        <span class="hero__ring" data-parallax="0.05"></span>
+      </div>
+
+      <div class="hero__grid container">
+        <div class="hero__content">
+          <p class="hero__eyebrow reveal-load" style="--d:.1s">
+            <span class="tick" aria-hidden="true"></span>
+            Nutrição esportiva · São&nbsp;Paulo&nbsp;&amp;&nbsp;Online
+          </p>
+
+          <h1 class="hero__title">
+            <span class="line" style="--d:.25s"><span>A ciência que</span></span>
+            <span class="line" style="--d:.37s"><span>separa o <em>esforço</em></span></span>
+            <span class="line" style="--d:.49s"><span>do <em>resultado</em>.</span></span>
+          </h1>
+
+          <p class="hero__sub reveal-load" style="--d:.7s">
+            Protocolos nutricionais individualizados para atletas e pessoas
+            que levam performance a sério — construídos com evidência,
+            ajustados com precisão.
+          </p>
+
+          <div class="hero__actions reveal-load" style="--d:.85s">
+            <a href="#contato" class="btn btn--primary">
+              Agendar avaliação
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10m0 0L8 3m4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#metodo" class="link-underline">Conhecer o método</a>
+          </div>
+
+          <dl class="hero__meta" aria-label="Indicadores">
+            <div class="reveal-load" style="--d:1s">
+              <dt><span class="count" data-count="612">0</span>+</dt>
+              <dd>atletas acompanhados</dd>
+            </div>
+            <div class="reveal-load" style="--d:1.12s">
+              <dt><span class="count" data-count="14">0</span> anos</dt>
+              <dd>de prática clínica</dd>
+            </div>
+            <div class="reveal-load" style="--d:1.24s">
+              <dt><span class="count" data-count="97">0</span>%</dt>
+              <dd>de adesão aos protocolos</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero__visual reveal-load" style="--d:.5s">
+          <figure class="hero__photo" id="heroPhoto">
+            <img
+              src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=880&q=80"
+              alt="Atleta se preparando para o treino em ambiente de baixa luz"
+              width="880" height="1100" fetchpriority="high" />
+            <span class="hero__photo-light" aria-hidden="true"></span>
+            <figcaption class="hero__chip">
+              <span class="pulse" aria-hidden="true"></span>
+              Protocolo em andamento — Maratona de Berlim
+            </figcaption>
+          </figure>
+
+          <div class="hero__badge" aria-hidden="true">
+            <svg viewBox="0 0 120 120" class="badge-rotor">
+              <defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0"/></defs>
+              <text><textPath href="#circ">ALTA PERFORMANCE · NUTRIÇÃO BASEADA EM EVIDÊNCIA ·&#160;</textPath></text>
+            </svg>
+            <span class="badge-core">◆</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#marquee" class="hero__scroll reveal-load" style="--d:1.5s" aria-label="Rolar para baixo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <section class="marquee" id="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Hipertrofia</span><i>◆</i><span>Endurance</span><i>◆</i><span>Composição corporal</span><i>◆</i><span>Saúde metabólica</span><i>◆</i><span>Periodização nutricional</span><i>◆</i><span>Suplementação estratégica</span><i>◆</i>
+        <span>Hipertrofia</span><i>◆</i><span>Endurance</span><i>◆</i><span>Composição corporal</span><i>◆</i><span>Saúde metabólica</span><i>◆</i><span>Periodização nutricional</span><i>◆</i><span>Suplementação estratégica</span><i>◆</i>
+      </div>
+    </section>
+
+    <!-- ============ MÉTODO ============ -->
+    <section class="method section" id="metodo">
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="label"><span class="label__num">01</span>O método</p>
+          <h2 class="section__title">Nada aqui é padrão.<br /><em>Nem deveria ser.</em></h2>
+          <p class="section__lede">
+            Dietas prontas ignoram a única variável que importa: você.
+            Cada protocolo nasce dos seus exames, da sua rotina, do seu
+            esporte — e evolui junto com os seus resultados.
+          </p>
+        </header>
+
+        <ol class="method__list">
+          <li class="method__item reveal" style="--i:0">
+            <span class="method__num" aria-hidden="true">01</span>
+            <div class="method__body">
+              <h3>Diagnóstico profundo</h3>
+              <p>Anamnese completa, análise de exames bioquímicos, bioimpedância e mapeamento da rotina de treinos. Antes de prescrever, eu entendo.</p>
+            </div>
+            <span class="method__tag">Semana 01</span>
+          </li>
+          <li class="method__item reveal" style="--i:1">
+            <span class="method__num" aria-hidden="true">02</span>
+            <div class="method__body">
+              <h3>Protocolo individual</h3>
+              <p>Plano alimentar e estratégia de suplementação periodizados com o seu calendário de treinos e provas. Construído para a sua vida real, não para uma vida ideal.</p>
+            </div>
+            <span class="method__tag">Semana 02</span>
+          </li>
+          <li class="method__item reveal" style="--i:2">
+            <span class="method__num" aria-hidden="true">03</span>
+            <div class="method__body">
+              <h3>Ajuste contínuo</h3>
+              <p>Reavaliações quinzenais, leitura de dados de performance e recalibragem constante. O protocolo do mês três nunca é igual ao do mês um.</p>
+            </div>
+            <span class="method__tag">Contínuo</span>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE ============ -->
+    <section class="about section" id="sobre">
+      <div class="about__glow" aria-hidden="true" data-parallax="0.06"></div>
+      <div class="container about__grid">
+        <div class="about__visual reveal">
+          <figure class="about__photo">
+            <img
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=760&q=80"
+              alt="Marina Duarte, nutricionista esportiva"
+              width="760" height="950" loading="lazy" />
+          </figure>
+          <div class="about__frame" aria-hidden="true" data-parallax="-0.04"></div>
+        </div>
+
+        <div class="about__content">
+          <p class="label reveal"><span class="label__num">02</span>Quem assina</p>
+          <h2 class="section__title reveal">Marina Duarte</h2>
+          <p class="about__role reveal">Nutricionista esportiva · CRN-3 48.217</p>
+
+          <blockquote class="about__quote reveal">
+            “Performance não se constrói no prato de domingo.
+            Se constrói na consistência invisível de todos os outros dias.”
+          </blockquote>
+
+          <p class="about__text reveal">
+            Há 14 anos traduzo ciência em resultado para maratonistas,
+            triatletas, lutadores e atletas de força — do amador competitivo
+            ao alto rendimento. Mestre em Nutrição Aplicada ao Exercício
+            pela USP, com formação complementar pelo ISSN (International
+            Society of Sports Nutrition).
+          </p>
+
+          <ul class="about__creds">
+            <li class="reveal" style="--i:0"><span>◆</span>Mestre em Nutrição e Exercício — EEFE-USP</li>
+            <li class="reveal" style="--i:1"><span>◆</span>Certificação CISSN — International Society of Sports Nutrition</li>
+            <li class="reveal" style="--i:2"><span>◆</span>Nutricionista de equipes olímpicas de endurance (2019–2023)</li>
+            <li class="reveal" style="--i:3"><span>◆</span>Docente convidada em pós-graduações de Nutrição Esportiva</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RESULTADOS ============ -->
+    <section class="results section" id="resultados">
+      <div class="container">
+        <header class="section__head section__head--center reveal">
+          <p class="label label--center"><span class="label__num">03</span>Resultados</p>
+          <h2 class="section__title">O que os números <em>não contam</em>,<br />quem vive conta.</h2>
+        </header>
+
+        <figure class="results__feature reveal">
+          <blockquote>
+            “Baixei <mark>19 minutos</mark> na maratona em uma temporada.
+            Treino eu já tinha. O que faltava era a Marina.”
+          </blockquote>
+          <figcaption>
+            <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=112&q=80" alt="" width="56" height="56" loading="lazy" />
+            <div>
+              <strong>Ricardo Sales</strong>
+              <span>Maratonista amador · sub-3h desde 2025</span>
+            </div>
+          </figcaption>
+        </figure>
+
+        <div class="results__row">
+          <figure class="quote-card reveal" style="--i:0">
+            <blockquote>“Cortei 8&nbsp;kg de gordura mantendo carga nos básicos. Sem terrorismo nutricional, sem dieta de sofrimento.”</blockquote>
+            <figcaption>
+              <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=112&q=80" alt="" width="48" height="48" loading="lazy" />
+              <div><strong>Beatriz Nunes</strong><span>Atleta de CrossFit</span></div>
+            </figcaption>
+          </figure>
+          <figure class="quote-card reveal" style="--i:1">
+            <blockquote>“Primeira preparação em que cheguei na semana da luta sem cortar peso no desespero. Isso muda tudo.”</blockquote>
+            <figcaption>
+              <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=112&q=80" alt="" width="48" height="48" loading="lazy" />
+              <div><strong>Thiago Faria</strong><span>Jiu-jitsu · faixa-preta competidor</span></div>
+            </figcaption>
+          </figure>
+        </div>
+
+        <dl class="results__stats reveal">
+          <div style="--i:0"><dt><span class="count" data-count="612">0</span>+</dt><dd>atletas acompanhados</dd></div>
+          <div style="--i:1"><dt><span class="count" data-count="38">0</span></dt><dd>pódios em 2025</dd></div>
+          <div style="--i:2"><dt><span class="count" data-count="97">0</span>%</dt><dd>renovam o acompanhamento</dd></div>
+          <div style="--i:3"><dt><span class="count" data-count="11">0</span></dt><dd>modalidades atendidas</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ PLANOS ============ -->
+    <section class="plans section" id="planos">
+      <div class="plans__glow" aria-hidden="true"></div>
+      <div class="container">
+        <header class="section__head reveal">
+          <p class="label"><span class="label__num">04</span>Acompanhamento</p>
+          <h2 class="section__title">Duas formas de<br /><em>trabalhar junto.</em></h2>
+        </header>
+
+        <div class="plans__grid">
+          <article class="plan plan--featured reveal glow-card" style="--i:0">
+            <header>
+              <p class="plan__kicker">Mais escolhido</p>
+              <h3>Acompanhamento Trimestral</h3>
+              <p class="plan__desc">Para quem quer evolução consistente, com protocolo vivo e ajustes contínuos ao longo da temporada.</p>
+            </header>
+            <ul>
+              <li>Avaliação completa + análise de exames</li>
+              <li>Protocolo nutricional e de suplementação periodizado</li>
+              <li>Reavaliações quinzenais (presencial ou vídeo)</li>
+              <li>Ajustes ilimitados via canal direto</li>
+              <li>Estratégia de prova / pesagem inclusa</li>
+            </ul>
+            <footer>
+              <a href="#contato" class="btn btn--primary">Aplicar para uma vaga
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10m0 0L8 3m4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <p class="plan__note"><span class="pulse" aria-hidden="true"></span>4 vagas abertas por mês</p>
+            </footer>
+          </article>
+
+          <article class="plan reveal glow-card" style="--i:1">
+            <header>
+              <p class="plan__kicker">Pontual</p>
+              <h3>Consulta Estratégica</h3>
+              <p class="plan__desc">Uma sessão profunda para destravar um objetivo específico — com plano de ação entregue em 72&nbsp;h.</p>
+            </header>
+            <ul>
+              <li>Sessão de 90 minutos, presencial ou online</li>
+              <li>Leitura completa de exames e histórico</li>
+              <li>Plano de ação nutricional documentado</li>
+              <li>30 dias de suporte para dúvidas</li>
+            </ul>
+            <footer>
+              <a href="#contato" class="btn btn--ghost">Agendar consulta</a>
+            </footer>
+          </article>
+        </div>
+
+        <ol class="plans__steps reveal" aria-label="Como funciona">
+          <li style="--i:0"><span>a</span>Você aplica pelo formulário</li>
+          <li style="--i:1"><span>b</span>Alinhamos objetivos em uma call de 15&nbsp;min</li>
+          <li style="--i:2"><span>c</span>Avaliação completa e início do protocolo</li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq section" id="faq">
+      <div class="container faq__grid">
+        <header class="section__head reveal">
+          <p class="label"><span class="label__num">05</span>FAQ</p>
+          <h2 class="section__title">Perguntas<br /><em>frequentes.</em></h2>
+          <p class="section__lede">Não encontrou a sua? <a class="link-underline" href="#contato">Fale direto comigo.</a></p>
+        </header>
+
+        <div class="faq__list">
+          <details class="faq__item reveal" style="--i:0">
+            <summary>Atende apenas atletas profissionais?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__panel"><p>Não. A maior parte dos meus pacientes são atletas amadores e pessoas comuns com objetivos sérios — hipertrofia, emagrecimento, saúde metabólica. O critério não é o seu nível, é o seu comprometimento.</p></div>
+          </details>
+          <details class="faq__item reveal" style="--i:1">
+            <summary>O acompanhamento funciona online?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__panel"><p>Sim, integralmente. Cerca de 60% dos meus pacientes são atendidos à distância, incluindo atletas em outros países. Avaliações, reavaliações e ajustes acontecem por vídeo, com a mesma profundidade do presencial.</p></div>
+          </details>
+          <details class="faq__item reveal" style="--i:2">
+            <summary>Vou precisar abandonar os alimentos que gosto?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__panel"><p>Não trabalho com listas de proibição. Protocolos insustentáveis geram resultados temporários. A estratégia é construída em torno da sua rotina e das suas preferências — é isso que explica os 97% de adesão.</p></div>
+          </details>
+          <details class="faq__item reveal" style="--i:3">
+            <summary>Como funciona a suplementação?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__panel"><p>Apenas o que tem evidência e faz sentido para o seu caso. Você não sai da consulta com uma lista de dez potes — sai com o que funciona, na dose certa, no momento certo do seu treino.</p></div>
+          </details>
+          <details class="faq__item reveal" style="--i:4">
+            <summary>Em quanto tempo vejo resultado?<span class="faq__icon" aria-hidden="true"></span></summary>
+            <div class="faq__panel"><p>Marcadores subjetivos (energia, sono, recuperação) mudam nas primeiras duas semanas. Composição corporal e performance, entre 8 e 12 semanas. Prometo o que a fisiologia permite — nada além.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="cta section" id="contato">
+      <div class="cta__ambient" aria-hidden="true">
+        <span class="orb orb--c" data-parallax="0.1"></span>
+      </div>
+      <div class="container cta__inner">
+        <p class="label label--center reveal"><span class="label__num">06</span>Próximo passo</p>
+        <h2 class="cta__title">
+          <span class="reveal" style="--i:0">Seu treino já está</span>
+          <span class="reveal" style="--i:1"><em>no limite.</em></span>
+          <span class="reveal" style="--i:2">Sua nutrição, não.</span>
+        </h2>
+        <div class="cta__actions reveal" style="--i:3">
+          <a class="btn btn--primary btn--lg" href="mailto:contato@marinaduarte.nutri.br?subject=Avalia%C3%A7%C3%A3o%20nutricional">
+            Agendar avaliação
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M2 7h10m0 0L8 3m4 4-4 4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <p class="cta__hint">Resposta em até 24 h úteis · <span class="pulse" aria-hidden="true"></span> 4 vagas abertas este mês</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <p class="footer__logo">Marina Duarte</p>
+        <p>Nutrição esportiva de alta performance.<br />São Paulo · Online para todo o mundo.</p>
+      </div>
+      <nav class="footer__col" aria-label="Mapa do site">
+        <p>Navegação</p>
+        <a href="#metodo">Método</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#resultados">Resultados</a>
+        <a href="#planos">Acompanhamento</a>
+      </nav>
+      <div class="footer__col">
+        <p>Contato</p>
+        <a href="mailto:contato@marinaduarte.nutri.br">contato@marinaduarte.nutri.br</a>
+        <a href="#" rel="noopener">Instagram</a>
+        <a href="#" rel="noopener">Strava Club</a>
+      </div>
+      <div class="footer__col">
+        <p>Consultório</p>
+        <address>Av. Brig. Faria Lima, 4509<br />Itaim Bibi · São Paulo</address>
+      </div>
+    </div>
+    <div class="container footer__base">
+      <p>© 2026 Marina Duarte · CRN-3 48.217</p>
+      <p>Feito com precisão.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

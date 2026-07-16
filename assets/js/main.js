@@ -12,12 +12,33 @@
   const loader = document.getElementById("loader");
   if (loader) {
     const hideLoader = () => loader.classList.add("is-done");
-    if (document.readyState === "complete" || reduceMotion) {
+
+    if (reduceMotion) {
+      // acessibilidade: sem animação, remove imediatamente
       hideLoader();
     } else {
-      window.addEventListener("load", hideLoader, { once: true });
-      // garantia: nunca segurar a página por mais de 2,5s
-      setTimeout(hideLoader, 2500);
+      // duração mínima visível para que o loader seja sempre percebido,
+      // mesmo com a página em cache/conexão rápida
+      const MIN_VISIBLE = 1100;
+      const MAX_WAIT = 3000;
+      const start = performance.now();
+      let hidden = false;
+
+      const finish = () => {
+        if (hidden) return;
+        hidden = true;
+        const elapsed = performance.now() - start;
+        const wait = Math.max(0, MIN_VISIBLE - elapsed);
+        setTimeout(hideLoader, wait);
+      };
+
+      if (document.readyState === "complete") {
+        finish();
+      } else {
+        window.addEventListener("load", finish, { once: true });
+        // garantia: nunca segurar a página além de MAX_WAIT
+        setTimeout(finish, MAX_WAIT);
+      }
     }
   }
 

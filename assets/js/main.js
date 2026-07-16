@@ -8,6 +8,19 @@
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const finePointer = window.matchMedia("(pointer: fine)").matches;
 
+  /* ---------- Tela de loading ---------- */
+  const loader = document.getElementById("loader");
+  if (loader) {
+    const hideLoader = () => loader.classList.add("is-done");
+    if (document.readyState === "complete" || reduceMotion) {
+      hideLoader();
+    } else {
+      window.addEventListener("load", hideLoader, { once: true });
+      // garantia: nunca segurar a página por mais de 2,5s
+      setTimeout(hideLoader, 2500);
+    }
+  }
+
   /* ---------- Navbar: escurece + blur ao rolar ---------- */
   const navbar = document.getElementById("navbar");
   let navTicking = false;
